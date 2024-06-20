@@ -7,35 +7,134 @@
     background: #eee;
 }
 
-.sketcher {
+/* .sketcher {
     display: grid;
     grid-template-columns: 6;
     grid-template-rows: 6;
-}
+} */
 
 #chem-tools {
-    grid-row-start: 1;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    width: 50px;
 }
 
 #edit-tools {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 6;
+    padding: 0;
 }
 
 #elem-tools {
-    grid-row-start: 2;
-    grid-row-end: 6;
-    grid-column-start: 5;
-    grid-column-end: 6;
+    padding: 0;
+    width: 40px;
 }
 
 #action-mp-bond-single {
     background-image: url(img/bond/single.svg);
+}
+
+#action-mp-bond-double {
+    background-image: url(img/bond/double.svg);
+}
+
+#action-mp-bond-triple {
+    background-image: url(img/bond/triple.svg);
+}
+
+#action-mp-bond-wedge {
+    background-image: url(img/bond/wedge.svg);
+}
+
+#action-mp-bond-hash {
+    background-image: url(img/bond/hash.svg);
+}
+
+.vertical-separator {
+    margin: 5px;
+    width: 30px;
+    height: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#action-mp-frag-benzene {
+    background-image: url(img/frag/benzene.svg);
+}
+
+#action-mp-frag-cyclopropane {
+    background-image: url(img/frag/cyclopropane.svg);
+}
+
+#action-mp-frag-cyclobutane {
+    background-image: url(img/frag/cyclobutane.svg);
+}
+
+#action-mp-frag-cyclopentane {
+    background-image: url(img/frag/cyclopentane.svg);
+}
+
+#action-mp-frag-cyclohexane {
+    background-image: url(img/frag/cyclohexane.svg);
+}
+
+#action-mp-frag-cycloheptane {
+    background-image: url(img/frag/cycloheptane.svg);
+}
+
+#action-mp-chain {
+    background-image: url(img/action/chain.svg);
+}
+
+#action-mp-clear {
+    background-image: url(img/action/clear.svg);
+}
+
+#action-mp-eraser {
+    background-image: url(img/action/erase.svg);
+}
+
+.horizontal-separator {
+    margin: 5px;
+    width: 0;
+    height: 30px;
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+
+#action-mp-undo {
+    background-image: url(img/action/undo.svg);
+}
+
+#action-mp-redo {
+    background-image: url(img/action/redo.svg);
+}
+
+#action-mp-drag {
+    background-image: url(img/action/move.svg);
+}
+
+#action-mp-rect {
+    background-image: url(img/action/rect.svg);
+}
+
+#action-mp-lasso {
+    background-image: url(img/action/lasso.svg);
+}
+
+#action-mp-redo {
+    background-image: url(img/action/redo.svg);
+}
+
+#action-mp-color-mode {
+    background-image: url(img/action/color.svg);
+}
+
+#action-mp-skeletal-formula {
+    background-image: url(img/action/skeletal-off.svg);
+}
+
+#action-mp-center {
+    background-image: url(img/action/center.svg);
+}
+
+#action-mp-clean {
+    background-image: url(img/action/clean.svg);
 }
 
 .tool-button {
