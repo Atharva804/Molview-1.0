@@ -6,3 +6,55 @@
     bottom: 0;
     background: #eee;
 }
+
+.sketcher {
+    display: grid;
+    grid-template-columns: 6;
+    grid-template-rows: 6;
+}
+
+#chem-tools {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#edit-tools {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+#elem-tools {
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+#action-mp-bond-single {
+    background-image: url(img/bond/single.svg);
+}
+
+.tool-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16pt;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
