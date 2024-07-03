@@ -1,29 +1,28 @@
+.container {
+    width: 100vw;
+}
+
 #sketcher {
+    /* display: flex; */
     position: absolute;
     top: 0;
     left: 0;
     right: 50%;
     bottom: 0;
     background: #eee;
+    /* flex-direction: row; */
 }
 
-/* .sketcher {
-    display: grid;
-    grid-template-columns: 6;
-    grid-template-rows: 6;
-} */
+.sketcher {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
 #chem-tools {
-    width: 50px;
-}
-
-#edit-tools {
-    padding: 0;
-}
-
-#elem-tools {
-    padding: 0;
-    width: 40px;
+    width: 5%;
 }
 
 #action-mp-bond-single {
@@ -137,12 +136,59 @@
     background-image: url(img/action/clean.svg);
 }
 
+.middle {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.drawing-canvas {
+    height: 100%;
+    width: 100%;
+    background-color: #a7a9ab;
+}
+
+.toolbar-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding-top: 0.5em; */
+    background-color: #2d5491;
+    border-radius: 0.2em;
+}
+
+#edit-tools {
+    padding: 0;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.edit-tools {
+    height: 40px;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#elem-tools {
+    padding: 0;
+    width: 5%;
+    margin-left: -1em;
+}
+
 .tool-button {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
+    width: 35px;
+    height: 35px;
+    margin: 0.2em;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    background-color: rgba(86, 137, 219, 0.9);
     color: #000;
     line-height: 40px;
     text-align: center;
@@ -156,4 +202,11 @@
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    transition: all linear 0.2s;
+}
+
+.tool-button:hover {
+    background-color: white;
+    height: 37px;
+    width: 37px;
 }
